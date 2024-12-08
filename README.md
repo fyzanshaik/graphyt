@@ -1,50 +1,109 @@
-# Welcome to your Expo app 👋
+# Graphyt
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A comic e-book platform featuring voice-enhanced storytelling and narration.
 
-## Get started
+## 🚧 Development Status
 
-1. Install dependencies
+This project is currently in active development and not yet ready for production.
 
-   ```bash
-   npm install
-   ```
+## Prerequisites
 
-2. Start the app
+-  Node.js (v16 or higher)
+-  npm or yarn
+-  Expo CLI
+-  iOS Simulator or Android Emulator
 
-   ```bash
-    npx expo start
-   ```
+## Getting Started
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+1. Clone the repository:
 
 ```bash
-npm run reset-project
+git clone [repository-url]
+cd graphyt
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Install dependencies:
 
-## Learn more
+```bash
+npm install
+# or
+yarn install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+3. Start the development server:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npx expo start
+```
 
-## Join the community
+4. Run on your preferred platform:
 
-Join our community of developers creating universal apps.
+-  Press `i` for iOS
+-  Press `a` for Android
+-  Scan QR code with Expo Go app on your device
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Project Structure
+
+```
+app/
+├── (auth)/
+│   ├── sign-in.tsx
+│   └── sign-up.tsx
+├── (onboarding)/
+│   ├── _layout.tsx
+│   ├── index.tsx
+│   └── genre.tsx
+└── components/
+    ├── ui/
+    │   ├── Button.tsx
+    │   └── Input.tsx
+    └── genre-card.tsx
+```
+
+## Tech Stack
+
+-  React Native
+-  Expo Router
+-  Moti (Animations)
+-  NativeWind (Styling)
+-  Expo Vector Icons
+
+## Features in Development
+
+-  [x] User Authentication
+-  [x] Onboarding Flow
+-  [x] Genre Selection
+-  [ ] Voice Narration
+-  [ ] Comic Reader
+-  [ ] Library Management
+-  [ ] User Profiles
+
+## Development Guidelines
+
+-  Use TypeScript for all new files
+-  Follow the existing component structure
+-  Maintain consistent styling using NativeWind
+-  Test on both iOS and Android platforms
+
+## Known Issues
+
+-  Layout issues on some Android devices
+-  Button delay in onboarding screens
+-  Navigation stack needs optimization
+
+## Contributing
+
+As this project is in development, please coordinate with the team before making significant changes.
+
+## Environment Setup
+
+Create a `.env` file in the root directory:
+
+```env
+# Add your environment variables here
+API_URL=your_api_url
+```
+
+## Contact
+
+For questions or access to the development environment, contact [Project Lead Name].
