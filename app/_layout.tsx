@@ -15,32 +15,11 @@ export default function RootLayout() {
 	}
 
 	return (
-		<Stack
-			screenOptions={{
-				headerShown: false,
-				animation: 'slide_from_right',
-			}}
-		>
-			<Stack.Screen
-				name="index"
-				options={{
-					headerShown: false,
-				}}
-			/>
-			<Stack.Screen
-				name="(onboarding)/index"
-				options={{
-					headerShown: false,
-					animation: 'slide_from_right',
-				}}
-			/>
-			<Stack.Screen
-				name="(onboarding)/genre"
-				options={{
-					headerShown: false,
-					animation: 'slide_from_right',
-				}}
-			/>
+		<Stack screenOptions={{ headerShown: false, animation: 'slide_from_right' }}>
+			<Stack.Screen name="index" options={{ headerShown: false }} />
+			<Stack.Screen name="(onboarding)/index" options={{ headerShown: false, animation: 'slide_from_right' }} />
+			<Stack.Screen name="(onboarding)/genre" options={{ headerShown: false, animation: 'slide_from_right' }} />
+			<Stack.Screen name="(tabs)" options={{ headerShown: false }} />
 		</Stack>
 	);
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, Pressable } from 'react-native';
-import { Link } from 'expo-router';
+import { Link, router } from 'expo-router';
 import { MotiView } from 'moti';
 import { Input } from '../../components/ui/Input';
 import { Button } from '../../components/ui/Button';
@@ -13,6 +13,7 @@ export default function SignInScreen() {
 	const handleSignIn = () => {
 		setLoading(true);
 		setTimeout(() => setLoading(false), 2000);
+		router.push('/(tabs)/Home');
 	};
 
 	return (
@@ -20,7 +21,7 @@ export default function SignInScreen() {
 			<View className="flex-1 justify-center">
 				<View className="mb-12">
 					<Text className="text-6xl font-bold text-white mb-3 tracking-tight">
-						Graphyt<Text className="text-purple-500">.</Text>
+						Graphty<Text className="text-purple-500">.</Text>
 					</Text>
 					<Text className="text-2xl text-gray-400">Welcome back</Text>
 				</View>
@@ -34,7 +35,7 @@ export default function SignInScreen() {
 					</TouchableOpacity>
 
 					<Button onPress={handleSignIn} loading={loading}>
-						Sign in
+						<Text> Sign in</Text>
 					</Button>
 				</View>
 
